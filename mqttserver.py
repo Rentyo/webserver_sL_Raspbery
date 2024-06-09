@@ -5,7 +5,7 @@ import base64
 import time
 from sensor.motor import activate_motor
 
-MQTT_BROKER = "192.168.137.190"
+MQTT_BROKER = "Broker_IP"
 MQTT_PORT = 1883
 MQTT_TOPICS = ['topic/shadeOn','topic/shadeOff']
 def send_data(topic, client, data):

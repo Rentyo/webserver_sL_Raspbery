@@ -4,11 +4,11 @@ import base64
 from PIL import Image
 import io
 def dbConnect(msg, data=''):
-    conn = pymysql.connect(host='192.168.0.7', 
-                        user='shade',
-                        password='1234',
+    conn = pymysql.connect(host='IP', 
+                        user='user',
+                        password='password',
                         charset='utf8',
-                        db = 'sys') 
+                        db = 'dbname') 
     cursor = conn.cursor() 
     ip_address = extract_ip()
     #GPS DB
